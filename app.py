@@ -123,7 +123,7 @@ if uploaded_file is not None:
             st.markdown("### 📊 Hasil Prediksi Seluruh Pelanggan")
             
             # Menampilkan Ringkasan Distribusi
-            ringkasan = rfm_final['Prediksi_Segmen'].value_counts().reset_index()
+            ringkasan = rfm_final['Prediksi Segmen'].value_counts().reset_index()
             ringkasan.columns = ['Nama Segmen', 'Jumlah Pelanggan']
             
             col_res1, col_res2 = st.columns([1, 2])
