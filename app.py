@@ -118,7 +118,7 @@ if uploaded_file is not None:
                 # 4. PREDIKSI SEGMENTASI
                 X_pred = rfm_final[['Recency', 'Frequency', 'Monetary']]
                 X_scaled = scaler.transform(X_pred)
-                rfm_final['Prediksi_Segmen'] = model.predict(X_scaled)
+                rfm_final['Prediksi Segmen'] = model.predict(X_scaled)
                 
             st.markdown("### 📊 Hasil Prediksi Seluruh Pelanggan")
             
